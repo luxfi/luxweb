@@ -1,0 +1,1678 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon Aug 07 2023 22:24:48 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="64068464cf2c78c0cde6dfe3" data-wf-site="64068464cf2c7845c6e6dfdf" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lux.Market</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/lux-market.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:100,200,300,regular,500,600,700,800,900"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <link href="https://lux.market/" rel="canonical">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-00351H79JB"></script>
+  <script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-00351H79JB');</script>
+  <script type="text/javascript">!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.agent='plwebflow';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '1192795114810136');fbq('track', 'PageView');</script>
+  <meta name="facebook-domain-verification" content="8j3st83qxa8ehd0kpdquszewavomjc">
+  <script>
+    window.onload = init;
+    function init () {
+        //Uranium Form
+        const uraniumForm = document.getElementById('wf-form-Uranium-Whitelist-Form');
+        sendFormDataToServerOnSubmit(uraniumForm, "3198210", "You're on the LUX Uranium Whitelist. Join the official LUX telegram to access the uranium drop. https://t.me/luxdefichat")
+        //Credit Form
+        const creditForm = document.getElementById('wf-form-Credit-Waitlist-Form');
+        sendFormDataToServerOnSubmit(creditForm, "33211417", "You're on the LUX Credit Whitelist. Join the official LUX telegram to access thedrop. https://t.me/luxdefichat")
+        //Validator Form
+        const validatorForm = document.getElementById('validator-waitlist-form');
+        sendFormDataToServerOnSubmit(validatorForm, "3211418", "You're on the LUX Validator Whitelist. Join the official LUX telegram to access the drop. https://t.me/luxdefichat")
+        //Coin Form
+        const coinForm = document.getElementById('wf-form-Coin-Waitlist-Form');
+        sendFormDataToServerOnSubmit(coinForm, "3211420", "You're on the LUX Coin Whitelist. Join the official LUX telegram to access thedrop. https://t.me/luxdefichat")
+        //Pass Form
+        const passForm = document.getElementById('wf-form-Pass-Waitlist-Form');
+        sendFormDataToServerOnSubmit(passForm, "3211421", "You're on the LUX Pass Whitelist. Join the official LUX telegram to access the drop. https://t.me/luxdefichat")
+        //Wagmi Form
+        const wagmiForm = document.getElementById('wf-form-Everything-Form');
+        sendFormDataToServerOnSubmit(wagmiForm, "3211703", "You're on the whitelist for all upcoming LUX products. Join the official LUX telegram to access the drop. https://t.me/luxdefichat")
+    }
+    function sendFormDataToServerOnSubmit(form, listId, dynamic_text){
+        form.addEventListener('submit', (e) => {
+            let data = Array.from(new FormData(form));
+            data.push({"list": listId, "text": dynamic_text});
+            let res = fetch('https://bestcondos.co:5000/textmagic/create-contact', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(res => res.json())
+            .then(res => console.log(res));
+        });
+    }
+</script>
+  <script src="https://kit.fontawesome.com/8720655aa7.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css" rel="stylesheet">
+  <style>
+.hide {
+		display: none;
+}
+#valid-msg {
+    color: #10B981;
+}
+#error-msg {
+		color: #F43F5E;
+}
+</style>
+</head>
+<body class="body">
+  <div id="uranium-whitelist-steps" data-w-id="4a823622-b176-05c6-d403-4fdce8dd8602" style="opacity:0" class="overlay-form whitelist w-form">
+    <form id="wf-form-Sign-Up-Steps" name="wf-form-Sign-Up-Steps" data-name="Sign Up (Steps)" method="post" class="whitelist-form" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="4a823622-b176-05c6-d403-4fdce8dd8603">
+      <div class="whitelist-content-div whitelist">
+        <div class="whitelist-steps _2-step">
+          <div class="whitelist-step-text active">1   Apply</div>
+          <div class="whitelist-step-text inactive">2   Join</div>
+        </div>
+        <div class="whitelist-steps _3-step">
+          <div class="whitelist-step-text active">1   Whitelist</div>
+          <div class="whitelist-step-text inactive">2   Share</div>
+          <div class="whitelist-step-text inactive">3   Join</div>
+        </div>
+        <div class="whitelist-text-div whitelist">
+          <h1 class="heading-21">Join Lux.</h1>
+          <p class="paragraph centered">Be the first to access the limited supply of gold and silver released each month.</p>
+        </div>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" id="Email" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-_4a823622-b176-05c6-d403-4fdce8dd860c-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="4a823622-b176-05c6-d403-4fdce8dd860d" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered affiliate">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span class="text-span-21">Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <div data-w-id="b80ba78f-9a91-c613-3ba7-8317fab35bb7" class="whitelist-content-div share">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div data-w-id="3260991f-a237-c711-0336-ac9c5eb796e0" class="whitelist-step-text active">2   Share</div>
+            <div data-w-id="f519283c-eed9-102c-4c60-2cb1f379189e" class="whitelist-step-text inactive">3   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Share and earn.</h1>
+              <p class="paragraph centered _18">For each person that whitelists for Lux Uranium via your affiliate link, you will earn:</p>
+            </div>
+          </div>
+          <div class="rewards-div">
+            <div class="reward-container"><img src="images/638f63f7f1d0b4ad9afdcb41_image-lux-uranium.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 oz. Lux Uranium NFT</div>
+                <div class="text-block-61">Approx. market value: $3</div>
+              </div>
+            </div>
+            <div class="reward-container"><img src="images/638f63e9262c0e3b24f627c5_image-tesla-model-s-plaid.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 entry to win a Tesla Model S Plaid</div>
+                <div class="text-block-61">Approx. market value: $150,000. <br>Faster than a lambo. No gas fees.</div>
+              </div>
+            </div>
+          </div>
+          <a data-w-id="4a29ef6a-fb74-b50a-6bfc-43156e9be493" href="https://sharemint.xyz/lux/sharer" target="_blank" class="button-5 w-button">Get your affiliate link</a>
+          <p class="disclaimer-text centered affiliate">
+            <a href="https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6390a2155b854c868f5de8cc_Lux%20Whitelist%20Program%20Terms%20and%20Conditions.pdf" target="_blank" class="link-35 earn">Lux Whitelist Program Terms and Conditions</a>
+          </p>
+        </div>
+        <div class="whitelist-bottom-cta share">
+          <a data-w-id="6591f437-7ac4-8cd6-a40a-845b580d2645" href="#" class="whitelist-cta-back w-inline-block">
+            <p data-w-id="f81b0cb3-3daf-8f9e-fc62-48052a67dda0" class="whitelist-step-text cta">Next</p>
+            <p data-w-id="8e4bf6d2-99cf-2970-2b1f-64bc67ccd048" class="whitelist-step-text cta icon">chevron_right</p>
+          </a>
+        </div>
+      </div>
+      <div class="success-text">DONE!<br></div>
+      <div data-w-id="ef68c89a-38cc-ac79-1738-e13a21c4f358" class="whitelist-content-div join">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps two-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text active">2   Join</div>
+          </div>
+          <div class="whitelist-steps three-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text inactive disable">2   Share</div>
+            <div class="whitelist-step-text active"><span>3</span>   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Join our community.</h1>
+            </div>
+          </div>
+          <div class="w-layout-grid join-community affiliate">
+            <a data-w-id="2ab3c89f-fcca-ae14-d248-dacff2c512db" href="https://discord.com/invite/jpnx7CTN" target="_blank" class="social black w-inline-block"><img src="images/638896398ac4bc8861df7e0e_social-discord-black_1638896398ac4bc8861df7e0e_social-discord-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Discord</div>
+            </a>
+            <a href="https://instagram.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388966a33061730686fa203_social-instagram-black_16388966a33061730686fa203_social-instagram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Instagram</div>
+            </a>
+            <a id="w-node-_2ab3c89f-fcca-ae14-d248-dacff2c512d7-cde6dfe3" href="https://t.me/luxdefichat" target="_blank" class="social black w-inline-block"><img src="images/6388964283b03a400937d9e6_social-telegram-black_16388964283b03a400937d9e6_social-telegram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Telegram</div>
+            </a>
+            <a href="https://twitter.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388964dce09974314c220e0_social-twitter-black_16388964dce09974314c220e0_social-twitter-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Twitter</div>
+            </a>
+            <a id="w-node-_2ab3c89f-fcca-ae14-d248-dacff2c512e3-cde6dfe3" href="https://linkedin.com/company/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/638896551c5ad827aebd9fbc_social-linkedin-black_1638896551c5ad827aebd9fbc_social-linkedin-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on LinkedIn</div>
+            </a>
+            <a href="https://facebook.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388965f23abc495e86bf824_social-facebook-black_16388965f23abc495e86bf824_social-facebook-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="whitelist-bottom-cta join two-step">
+          <p data-w-id="6c28565c-19dc-cb11-9e00-5584e2e16b74" class="whitelist-step-text cta nuclear">Done</p>
+        </div>
+        <div class="whitelist-bottom-cta join three-step">
+          <div class="whitelist-cta-back">
+            <p data-w-id="092dff5d-46f2-360f-d885-2589759db209" class="whitelist-step-text cta icon inactive">arrow_back_ios</p>
+          </div>
+          <p data-w-id="092dff5d-46f2-360f-d885-2589759db20b" class="whitelist-step-text cta nuclear">Done</p>
+          <p class="whitelist-step-text cta icon inactive hidden">arrow_back_ios</p>
+        </div>
+      </div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="silver-whitelist-steps" data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b121d7" style="opacity:0" class="overlay-form whitelist silver w-form">
+    <form id="wf-form-Silver-Whitelist-Steps" name="wf-form-Silver-Whitelist-Steps" data-name="Silver Whitelist (Steps)" method="post" class="whitelist-form" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="efcd2c41-5002-cbf4-a2b2-48a694b121d8">
+      <div class="whitelist-content-div whitelist">
+        <div class="whitelist-steps _2-step">
+          <div class="whitelist-step-text active">1   Whitelist</div>
+          <div class="whitelist-step-text inactive">2   Join</div>
+        </div>
+        <div class="whitelist-steps _3-step">
+          <div class="whitelist-step-text active">1   Whitelist</div>
+          <div class="whitelist-step-text inactive">2   Share</div>
+          <div class="whitelist-step-text inactive">3   Join</div>
+        </div>
+        <div class="whitelist-text-div whitelist">
+          <h1 class="heading-21">Get whitelisted.</h1>
+          <p class="paragraph centered">Be the first to access the limited supply of Lux Silver NFTs being released in the upcoming drop.</p>
+        </div>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-5" data-name="Email 5" placeholder="Email" id="Email-5" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-efcd2c41-5002-cbf4-a2b2-48a694b121f1-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b121f2" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered affiliate">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span class="text-span-21">Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <div class="whitelist-content-div share">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text active">2   Share</div>
+            <div class="whitelist-step-text inactive">3   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Share and earn.</h1>
+              <p class="paragraph centered _18">For each person that whitelists for Lux Uranium via your affiliate link, you will earn:</p>
+            </div>
+          </div>
+          <div class="rewards-div">
+            <div class="reward-container"><img src="images/638f63f7f1d0b4ad9afdcb41_image-lux-uranium.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 oz. Lux Uranium NFT</div>
+                <div class="text-block-61">Approx. market value: $3</div>
+              </div>
+            </div>
+            <div class="reward-container"><img src="images/638f63e9262c0e3b24f627c5_image-tesla-model-s-plaid.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 entry to win a Tesla Model S Plaid</div>
+                <div class="text-block-61">Approx. market value: $150,000. <br>Faster than a lambo. No gas fees.</div>
+              </div>
+            </div>
+          </div>
+          <a data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b1221d" href="https://sharemint.xyz/lux/sharer" target="_blank" class="button-5 w-button">Get your affiliate link</a>
+          <p class="disclaimer-text centered affiliate">
+            <a href="https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6390a2155b854c868f5de8cc_Lux%20Whitelist%20Program%20Terms%20and%20Conditions.pdf" target="_blank" class="link-35 earn">Lux Whitelist Program Terms and Conditions</a>
+          </p>
+        </div>
+        <div class="whitelist-bottom-cta share">
+          <a data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b12223" href="#" class="whitelist-cta-back w-inline-block">
+            <p data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b12224" class="whitelist-step-text cta">Next</p>
+            <p data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b12226" class="whitelist-step-text cta icon">chevron_right</p>
+          </a>
+        </div>
+      </div>
+      <div class="success-text">DONE!<br></div>
+      <div class="whitelist-content-div join">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps two-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text active">2   Join</div>
+          </div>
+          <div class="whitelist-steps three-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text inactive disable">2   Share</div>
+            <div class="whitelist-step-text active"><span>3</span>   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Join our community.</h1>
+            </div>
+          </div>
+          <div class="w-layout-grid join-community affiliate">
+            <a data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b12240" href="https://discord.com/invite/jpnx7CTN" target="_blank" class="social black w-inline-block"><img src="images/638896398ac4bc8861df7e0e_social-discord-black_1638896398ac4bc8861df7e0e_social-discord-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Discord</div>
+            </a>
+            <a href="https://instagram.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388966a33061730686fa203_social-instagram-black_16388966a33061730686fa203_social-instagram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Instagram</div>
+            </a>
+            <a id="w-node-efcd2c41-5002-cbf4-a2b2-48a694b12248-cde6dfe3" href="https://t.me/luxdefichat" target="_blank" class="social black w-inline-block"><img src="images/6388964283b03a400937d9e6_social-telegram-black_16388964283b03a400937d9e6_social-telegram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Telegram</div>
+            </a>
+            <a href="https://twitter.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388964dce09974314c220e0_social-twitter-black_16388964dce09974314c220e0_social-twitter-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Twitter</div>
+            </a>
+            <a id="w-node-efcd2c41-5002-cbf4-a2b2-48a694b12250-cde6dfe3" href="https://linkedin.com/company/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/638896551c5ad827aebd9fbc_social-linkedin-black_1638896551c5ad827aebd9fbc_social-linkedin-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on LinkedIn</div>
+            </a>
+            <a href="https://facebook.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388965f23abc495e86bf824_social-facebook-black_16388965f23abc495e86bf824_social-facebook-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="whitelist-bottom-cta join two-step">
+          <p data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b12259" class="whitelist-step-text cta nuclear">Done</p>
+        </div>
+        <div class="whitelist-bottom-cta join three-step">
+          <div class="whitelist-cta-back">
+            <p data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b1225d" class="whitelist-step-text cta icon inactive">arrow_back_ios</p>
+          </div>
+          <p data-w-id="efcd2c41-5002-cbf4-a2b2-48a694b1225f" class="whitelist-step-text cta nuclear">Done</p>
+          <p class="whitelist-step-text cta icon inactive hidden">arrow_back_ios</p>
+        </div>
+      </div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="credit-waitlist-steps" data-w-id="086d5c76-ef9c-aafa-1645-e7f09de56877" style="opacity:0" class="overlay-form waitlist credit w-form">
+    <form id="wf-form-Uranium-Whitelist-Form" name="wf-form-Uranium-Whitelist-Form" data-name="Uranium Whitelist Form" method="post" class="whitelist-form waitlist" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="086d5c76-ef9c-aafa-1645-e7f09de56878">
+      <div class="whitelist-content-div whitelist">
+        <div class="whitelist-steps _2-step">
+          <div class="whitelist-step-text active">1   Waitlist</div>
+          <div class="whitelist-step-text inactive">2   Join</div>
+        </div>
+        <div class="whitelist-steps _3-step">
+          <div class="whitelist-step-text active">1   Whitelist</div>
+          <div class="whitelist-step-text inactive">2   Share</div>
+          <div class="whitelist-step-text inactive">3   Join</div>
+        </div>
+        <div class="whitelist-text-div whitelist">
+          <h1 class="heading-21">Get on the waitlist.</h1>
+          <p class="paragraph centered">Be the first to get access to Lux Credit.</p>
+        </div>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-4" data-name="Email 4" placeholder="Email" id="Email-4" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-_086d5c76-ef9c-aafa-1645-e7f09de56891-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="086d5c76-ef9c-aafa-1645-e7f09de56892" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered affiliate waitlist">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span class="text-span-21">Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <div class="whitelist-content-div share">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text active">2   Share</div>
+            <div class="whitelist-step-text inactive">3   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Share and earn.</h1>
+              <p class="paragraph centered _18">For each person that whitelists for Lux Uranium via your affiliate link, you will earn:</p>
+            </div>
+          </div>
+          <div class="rewards-div">
+            <div class="reward-container"><img src="images/638f63f7f1d0b4ad9afdcb41_image-lux-uranium.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 oz. Lux Uranium NFT</div>
+                <div class="text-block-61">Approx. market value: $3</div>
+              </div>
+            </div>
+            <div class="reward-container"><img src="images/638f63e9262c0e3b24f627c5_image-tesla-model-s-plaid.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 entry to win a Tesla Model S Plaid</div>
+                <div class="text-block-61">Approx. market value: $150,000. <br>Faster than a lambo. No gas fees.</div>
+              </div>
+            </div>
+          </div>
+          <a data-w-id="086d5c76-ef9c-aafa-1645-e7f09de568bd" href="https://sharemint.xyz/lux/sharer" target="_blank" class="button-5 w-button">Get your affiliate link</a>
+          <p class="disclaimer-text centered affiliate">
+            <a href="https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6390a2155b854c868f5de8cc_Lux%20Whitelist%20Program%20Terms%20and%20Conditions.pdf" target="_blank" class="link-35 earn">Lux Whitelist Program Terms and Conditions</a>
+          </p>
+        </div>
+        <div class="whitelist-bottom-cta share">
+          <a data-w-id="086d5c76-ef9c-aafa-1645-e7f09de568c3" href="#" class="whitelist-cta-back w-inline-block">
+            <p data-w-id="086d5c76-ef9c-aafa-1645-e7f09de568c4" class="whitelist-step-text cta">Next</p>
+            <p data-w-id="086d5c76-ef9c-aafa-1645-e7f09de568c6" class="whitelist-step-text cta icon">chevron_right</p>
+          </a>
+        </div>
+      </div>
+      <div class="success-text">DONE!<br></div>
+      <div class="whitelist-content-div join">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps two-step">
+            <div class="whitelist-step-text inactive">1   Waitlist</div>
+            <div class="whitelist-step-text active">2   Join</div>
+          </div>
+          <div class="whitelist-steps three-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text inactive disable">2   Share</div>
+            <div class="whitelist-step-text active"><span>3</span>   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Join our community.</h1>
+            </div>
+          </div>
+          <div class="w-layout-grid join-community affiliate">
+            <a data-w-id="086d5c76-ef9c-aafa-1645-e7f09de568e0" href="https://discord.com/invite/jpnx7CTN" target="_blank" class="social black w-inline-block"><img src="images/638896398ac4bc8861df7e0e_social-discord-black_1638896398ac4bc8861df7e0e_social-discord-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Discord</div>
+            </a>
+            <a href="https://instagram.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388966a33061730686fa203_social-instagram-black_16388966a33061730686fa203_social-instagram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Instagram</div>
+            </a>
+            <a id="w-node-_086d5c76-ef9c-aafa-1645-e7f09de568e8-cde6dfe3" href="https://t.me/luxdefichat" target="_blank" class="social black w-inline-block"><img src="images/6388964283b03a400937d9e6_social-telegram-black_16388964283b03a400937d9e6_social-telegram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Telegram</div>
+            </a>
+            <a href="https://twitter.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388964dce09974314c220e0_social-twitter-black_16388964dce09974314c220e0_social-twitter-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Twitter</div>
+            </a>
+            <a id="w-node-_086d5c76-ef9c-aafa-1645-e7f09de568f0-cde6dfe3" href="https://linkedin.com/company/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/638896551c5ad827aebd9fbc_social-linkedin-black_1638896551c5ad827aebd9fbc_social-linkedin-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on LinkedIn</div>
+            </a>
+            <a href="https://facebook.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388965f23abc495e86bf824_social-facebook-black_16388965f23abc495e86bf824_social-facebook-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="whitelist-bottom-cta join two-step">
+          <p data-w-id="086d5c76-ef9c-aafa-1645-e7f09de568f9" class="whitelist-step-text cta nuclear">Done</p>
+        </div>
+        <div class="whitelist-bottom-cta join three-step">
+          <div class="whitelist-cta-back">
+            <p data-w-id="086d5c76-ef9c-aafa-1645-e7f09de568fd" class="whitelist-step-text cta icon inactive">arrow_back_ios</p>
+          </div>
+          <p data-w-id="086d5c76-ef9c-aafa-1645-e7f09de568ff" class="whitelist-step-text cta nuclear">Done</p>
+          <p class="whitelist-step-text cta icon inactive hidden">arrow_back_ios</p>
+        </div>
+      </div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="validator-waitlist-steps" data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf902" style="opacity:0" class="overlay-form waitlist validator w-form">
+    <form id="wf-form-Uranium-Whitelist-Form" name="wf-form-Uranium-Whitelist-Form" data-name="Uranium Whitelist Form" method="post" class="whitelist-form waitlist" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="ef28f441-3a80-31f0-99c4-1d0b0cabf903">
+      <div class="whitelist-content-div whitelist">
+        <div class="whitelist-steps _2-step">
+          <div class="whitelist-step-text active">1   Waitlist</div>
+          <div class="whitelist-step-text inactive">2   Join</div>
+        </div>
+        <div class="whitelist-steps _3-step">
+          <div class="whitelist-step-text active">1   Whitelist</div>
+          <div class="whitelist-step-text inactive">2   Share</div>
+          <div class="whitelist-step-text inactive">3   Join</div>
+        </div>
+        <div class="whitelist-text-div whitelist">
+          <h1 class="heading-21">Get on the waitlist.</h1>
+          <p class="paragraph centered">Be the first to get access to Lux Validator.</p>
+        </div>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-4" data-name="Email 4" placeholder="Email" id="Email-4" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-ef28f441-3a80-31f0-99c4-1d0b0cabf91c-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf91d" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered affiliate waitlist">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span class="text-span-21">Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <div class="whitelist-content-div share">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text active">2   Share</div>
+            <div class="whitelist-step-text inactive">3   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Share and earn.</h1>
+              <p class="paragraph centered _18">For each person that whitelists for Lux Uranium via your affiliate link, you will earn:</p>
+            </div>
+          </div>
+          <div class="rewards-div">
+            <div class="reward-container"><img src="images/638f63f7f1d0b4ad9afdcb41_image-lux-uranium.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 oz. Lux Uranium NFT</div>
+                <div class="text-block-61">Approx. market value: $3</div>
+              </div>
+            </div>
+            <div class="reward-container"><img src="images/638f63e9262c0e3b24f627c5_image-tesla-model-s-plaid.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 entry to win a Tesla Model S Plaid</div>
+                <div class="text-block-61">Approx. market value: $150,000. <br>Faster than a lambo. No gas fees.</div>
+              </div>
+            </div>
+          </div>
+          <a data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf948" href="https://sharemint.xyz/lux/sharer" target="_blank" class="button-5 w-button">Get your affiliate link</a>
+          <p class="disclaimer-text centered affiliate">
+            <a href="https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6390a2155b854c868f5de8cc_Lux%20Whitelist%20Program%20Terms%20and%20Conditions.pdf" target="_blank" class="link-35 earn">Lux Whitelist Program Terms and Conditions</a>
+          </p>
+        </div>
+        <div class="whitelist-bottom-cta share">
+          <a data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf94e" href="#" class="whitelist-cta-back w-inline-block">
+            <p data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf94f" class="whitelist-step-text cta">Next</p>
+            <p data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf951" class="whitelist-step-text cta icon">chevron_right</p>
+          </a>
+        </div>
+      </div>
+      <div class="success-text">DONE!<br></div>
+      <div class="whitelist-content-div join">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps two-step">
+            <div class="whitelist-step-text inactive">1   Waitlist</div>
+            <div class="whitelist-step-text active">2   Join</div>
+          </div>
+          <div class="whitelist-steps three-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text inactive disable">2   Share</div>
+            <div class="whitelist-step-text active"><span>3</span>   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Join our community.</h1>
+            </div>
+          </div>
+          <div class="w-layout-grid join-community affiliate">
+            <a data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf96b" href="https://discord.com/invite/jpnx7CTN" target="_blank" class="social black w-inline-block"><img src="images/638896398ac4bc8861df7e0e_social-discord-black_1638896398ac4bc8861df7e0e_social-discord-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Discord</div>
+            </a>
+            <a href="https://instagram.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388966a33061730686fa203_social-instagram-black_16388966a33061730686fa203_social-instagram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Instagram</div>
+            </a>
+            <a id="w-node-ef28f441-3a80-31f0-99c4-1d0b0cabf973-cde6dfe3" href="https://t.me/luxdefichat" target="_blank" class="social black w-inline-block"><img src="images/6388964283b03a400937d9e6_social-telegram-black_16388964283b03a400937d9e6_social-telegram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Telegram</div>
+            </a>
+            <a href="https://twitter.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388964dce09974314c220e0_social-twitter-black_16388964dce09974314c220e0_social-twitter-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Twitter</div>
+            </a>
+            <a id="w-node-ef28f441-3a80-31f0-99c4-1d0b0cabf97b-cde6dfe3" href="https://linkedin.com/company/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/638896551c5ad827aebd9fbc_social-linkedin-black_1638896551c5ad827aebd9fbc_social-linkedin-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on LinkedIn</div>
+            </a>
+            <a href="https://facebook.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388965f23abc495e86bf824_social-facebook-black_16388965f23abc495e86bf824_social-facebook-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="whitelist-bottom-cta join two-step">
+          <p data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf984" class="whitelist-step-text cta nuclear">Done</p>
+        </div>
+        <div class="whitelist-bottom-cta join three-step">
+          <div class="whitelist-cta-back">
+            <p data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf988" class="whitelist-step-text cta icon inactive">arrow_back_ios</p>
+          </div>
+          <p data-w-id="ef28f441-3a80-31f0-99c4-1d0b0cabf98a" class="whitelist-step-text cta nuclear">Done</p>
+          <p class="whitelist-step-text cta icon inactive hidden">arrow_back_ios</p>
+        </div>
+      </div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="coin-waitlist-steps" data-w-id="104bdad4-548f-c3c0-3236-15e12b6806f2" style="opacity:0" class="overlay-form waitlist coin w-form">
+    <form id="wf-form-Uranium-Whitelist-Form" name="wf-form-Uranium-Whitelist-Form" data-name="Uranium Whitelist Form" method="post" class="whitelist-form waitlist" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="104bdad4-548f-c3c0-3236-15e12b6806f3">
+      <div class="whitelist-content-div whitelist">
+        <div class="whitelist-steps _2-step">
+          <div class="whitelist-step-text active">1   Waitlist</div>
+          <div class="whitelist-step-text inactive">2   Join</div>
+        </div>
+        <div class="whitelist-steps _3-step">
+          <div class="whitelist-step-text active">1   Whitelist</div>
+          <div class="whitelist-step-text inactive">2   Share</div>
+          <div class="whitelist-step-text inactive">3   Join</div>
+        </div>
+        <div class="whitelist-text-div whitelist">
+          <h1 class="heading-21">Get on the waitlist.</h1>
+          <p class="paragraph centered">Be the first to get access to Lux Coin.</p>
+        </div>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-4" data-name="Email 4" placeholder="Email" id="Email-4" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-_104bdad4-548f-c3c0-3236-15e12b68070c-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="104bdad4-548f-c3c0-3236-15e12b68070d" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered affiliate waitlist">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span class="text-span-21">Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <div class="whitelist-content-div share">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text active">2   Share</div>
+            <div class="whitelist-step-text inactive">3   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Share and earn.</h1>
+              <p class="paragraph centered _18">For each person that whitelists for Lux Uranium via your affiliate link, you will earn:</p>
+            </div>
+          </div>
+          <div class="rewards-div">
+            <div class="reward-container"><img src="images/638f63f7f1d0b4ad9afdcb41_image-lux-uranium.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 oz. Lux Uranium NFT</div>
+                <div class="text-block-61">Approx. market value: $3</div>
+              </div>
+            </div>
+            <div class="reward-container"><img src="images/638f63e9262c0e3b24f627c5_image-tesla-model-s-plaid.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 entry to win a Tesla Model S Plaid</div>
+                <div class="text-block-61">Approx. market value: $150,000. <br>Faster than a lambo. No gas fees.</div>
+              </div>
+            </div>
+          </div>
+          <a data-w-id="104bdad4-548f-c3c0-3236-15e12b680738" href="https://sharemint.xyz/lux/sharer" target="_blank" class="button-5 w-button">Get your affiliate link</a>
+          <p class="disclaimer-text centered affiliate">
+            <a href="https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6390a2155b854c868f5de8cc_Lux%20Whitelist%20Program%20Terms%20and%20Conditions.pdf" target="_blank" class="link-35 earn">Lux Whitelist Program Terms and Conditions</a>
+          </p>
+        </div>
+        <div class="whitelist-bottom-cta share">
+          <a data-w-id="104bdad4-548f-c3c0-3236-15e12b68073e" href="#" class="whitelist-cta-back w-inline-block">
+            <p data-w-id="104bdad4-548f-c3c0-3236-15e12b68073f" class="whitelist-step-text cta">Next</p>
+            <p data-w-id="104bdad4-548f-c3c0-3236-15e12b680741" class="whitelist-step-text cta icon">chevron_right</p>
+          </a>
+        </div>
+      </div>
+      <div class="success-text">DONE!<br></div>
+      <div class="whitelist-content-div join">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps two-step">
+            <div class="whitelist-step-text inactive">1   Waitlist</div>
+            <div class="whitelist-step-text active">2   Join</div>
+          </div>
+          <div class="whitelist-steps three-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text inactive disable">2   Share</div>
+            <div class="whitelist-step-text active"><span>3</span>   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Join our community.</h1>
+            </div>
+          </div>
+          <div class="w-layout-grid join-community affiliate">
+            <a data-w-id="104bdad4-548f-c3c0-3236-15e12b68075b" href="https://discord.com/invite/jpnx7CTN" target="_blank" class="social black w-inline-block"><img src="images/638896398ac4bc8861df7e0e_social-discord-black_1638896398ac4bc8861df7e0e_social-discord-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Discord</div>
+            </a>
+            <a href="https://instagram.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388966a33061730686fa203_social-instagram-black_16388966a33061730686fa203_social-instagram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Instagram</div>
+            </a>
+            <a id="w-node-_104bdad4-548f-c3c0-3236-15e12b680763-cde6dfe3" href="https://t.me/luxdefichat" target="_blank" class="social black w-inline-block"><img src="images/6388964283b03a400937d9e6_social-telegram-black_16388964283b03a400937d9e6_social-telegram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Telegram</div>
+            </a>
+            <a href="https://twitter.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388964dce09974314c220e0_social-twitter-black_16388964dce09974314c220e0_social-twitter-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Twitter</div>
+            </a>
+            <a id="w-node-_104bdad4-548f-c3c0-3236-15e12b68076b-cde6dfe3" href="https://linkedin.com/company/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/638896551c5ad827aebd9fbc_social-linkedin-black_1638896551c5ad827aebd9fbc_social-linkedin-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on LinkedIn</div>
+            </a>
+            <a href="https://facebook.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388965f23abc495e86bf824_social-facebook-black_16388965f23abc495e86bf824_social-facebook-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="whitelist-bottom-cta join two-step">
+          <p data-w-id="104bdad4-548f-c3c0-3236-15e12b680774" class="whitelist-step-text cta nuclear">Done</p>
+        </div>
+        <div class="whitelist-bottom-cta join three-step">
+          <div class="whitelist-cta-back">
+            <p data-w-id="104bdad4-548f-c3c0-3236-15e12b680778" class="whitelist-step-text cta icon inactive">arrow_back_ios</p>
+          </div>
+          <p data-w-id="104bdad4-548f-c3c0-3236-15e12b68077a" class="whitelist-step-text cta nuclear">Done</p>
+          <p class="whitelist-step-text cta icon inactive hidden">arrow_back_ios</p>
+        </div>
+      </div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="pass-waitlist-steps" data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a5457" style="opacity:0" class="overlay-form waitlist pass w-form">
+    <form id="wf-form-Pass-Waitlist-Steps" name="wf-form-Pass-Waitlist-Steps" data-name="Pass Waitlist (Steps)" method="post" class="whitelist-form waitlist" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="7510cfbc-c4a5-2fb2-57ad-e35db52a5458">
+      <div class="whitelist-content-div whitelist">
+        <div class="whitelist-steps _2-step">
+          <div class="whitelist-step-text active">1   Waitlist</div>
+          <div class="whitelist-step-text inactive">2   Join</div>
+        </div>
+        <div class="whitelist-steps _3-step">
+          <div class="whitelist-step-text active">1   Whitelist</div>
+          <div class="whitelist-step-text inactive">2   Share</div>
+          <div class="whitelist-step-text inactive">3   Join</div>
+        </div>
+        <div class="whitelist-text-div whitelist">
+          <h1 class="heading-21">Get on the waitlist.</h1>
+          <p class="paragraph centered">Be the first to get access to Lux Pass.</p>
+        </div>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-4" data-name="Email 4" placeholder="Email" id="Email-4" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-_7510cfbc-c4a5-2fb2-57ad-e35db52a5471-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a5472" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered affiliate waitlist">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span class="text-span-21">Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <div class="whitelist-content-div share">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text active">2   Share</div>
+            <div class="whitelist-step-text inactive">3   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Share and earn.</h1>
+              <p class="paragraph centered _18">For each person that whitelists for Lux Uranium via your affiliate link, you will earn:</p>
+            </div>
+          </div>
+          <div class="rewards-div">
+            <div class="reward-container"><img src="images/638f63f7f1d0b4ad9afdcb41_image-lux-uranium.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 oz. Lux Uranium NFT</div>
+                <div class="text-block-61">Approx. market value: $3</div>
+              </div>
+            </div>
+            <div class="reward-container"><img src="images/638f63e9262c0e3b24f627c5_image-tesla-model-s-plaid.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 entry to win a Tesla Model S Plaid</div>
+                <div class="text-block-61">Approx. market value: $150,000. <br>Faster than a lambo. No gas fees.</div>
+              </div>
+            </div>
+          </div>
+          <a data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a549d" href="https://sharemint.xyz/lux/sharer" target="_blank" class="button-5 w-button">Get your affiliate link</a>
+          <p class="disclaimer-text centered affiliate">
+            <a href="https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6390a2155b854c868f5de8cc_Lux%20Whitelist%20Program%20Terms%20and%20Conditions.pdf" target="_blank" class="link-35 earn">Lux Whitelist Program Terms and Conditions</a>
+          </p>
+        </div>
+        <div class="whitelist-bottom-cta share">
+          <a data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a54a3" href="#" class="whitelist-cta-back w-inline-block">
+            <p data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a54a4" class="whitelist-step-text cta">Next</p>
+            <p data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a54a6" class="whitelist-step-text cta icon">chevron_right</p>
+          </a>
+        </div>
+      </div>
+      <div class="success-text">DONE!<br></div>
+      <div class="whitelist-content-div join">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps two-step">
+            <div class="whitelist-step-text inactive">1   Waitlist</div>
+            <div class="whitelist-step-text active">2   Join</div>
+          </div>
+          <div class="whitelist-steps three-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text inactive disable">2   Share</div>
+            <div class="whitelist-step-text active"><span>3</span>   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Join our community.</h1>
+            </div>
+          </div>
+          <div class="w-layout-grid join-community affiliate">
+            <a data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a54c0" href="https://discord.com/invite/jpnx7CTN" target="_blank" class="social black w-inline-block"><img src="images/638896398ac4bc8861df7e0e_social-discord-black_1638896398ac4bc8861df7e0e_social-discord-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Discord</div>
+            </a>
+            <a href="https://instagram.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388966a33061730686fa203_social-instagram-black_16388966a33061730686fa203_social-instagram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Instagram</div>
+            </a>
+            <a id="w-node-_7510cfbc-c4a5-2fb2-57ad-e35db52a54c8-cde6dfe3" href="https://t.me/luxdefichat" target="_blank" class="social black w-inline-block"><img src="images/6388964283b03a400937d9e6_social-telegram-black_16388964283b03a400937d9e6_social-telegram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Telegram</div>
+            </a>
+            <a href="https://twitter.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388964dce09974314c220e0_social-twitter-black_16388964dce09974314c220e0_social-twitter-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Twitter</div>
+            </a>
+            <a id="w-node-_7510cfbc-c4a5-2fb2-57ad-e35db52a54d0-cde6dfe3" href="https://linkedin.com/company/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/638896551c5ad827aebd9fbc_social-linkedin-black_1638896551c5ad827aebd9fbc_social-linkedin-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on LinkedIn</div>
+            </a>
+            <a href="https://facebook.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388965f23abc495e86bf824_social-facebook-black_16388965f23abc495e86bf824_social-facebook-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="whitelist-bottom-cta join two-step">
+          <p data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a54d9" class="whitelist-step-text cta nuclear">Done</p>
+        </div>
+        <div class="whitelist-bottom-cta join three-step">
+          <div class="whitelist-cta-back">
+            <p data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a54dd" class="whitelist-step-text cta icon inactive">arrow_back_ios</p>
+          </div>
+          <p data-w-id="7510cfbc-c4a5-2fb2-57ad-e35db52a54df" class="whitelist-step-text cta nuclear">Done</p>
+          <p class="whitelist-step-text cta icon inactive hidden">arrow_back_ios</p>
+        </div>
+      </div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="pass-waitlist-steps" data-w-id="a69ef41c-14b9-2021-9037-3f3677d751aa" style="opacity:0" class="overlay-form waitlist pass everything w-form">
+    <form id="wf-form-Pass-Waitlist-Steps" name="wf-form-Pass-Waitlist-Steps" data-name="Pass Waitlist (Steps)" method="post" class="whitelist-form waitlist" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="a69ef41c-14b9-2021-9037-3f3677d751ab">
+      <div class="whitelist-content-div whitelist">
+        <div class="whitelist-steps _2-step">
+          <div class="whitelist-step-text active">1   Get in</div>
+          <div class="whitelist-step-text inactive">2   Join</div>
+        </div>
+        <div class="whitelist-steps _3-step">
+          <div class="whitelist-step-text active">1   Whitelist</div>
+          <div class="whitelist-step-text inactive">2   Share</div>
+          <div class="whitelist-step-text inactive">3   Join</div>
+        </div>
+        <div class="whitelist-text-div whitelist">
+          <h1 class="heading-21">Get in on everything.</h1>
+          <p class="paragraph centered">Be the first to get access all Lux products.</p>
+        </div>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-4" data-name="Email 4" placeholder="Email" id="Email-4" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-a69ef41c-14b9-2021-9037-3f3677d751c4-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="a69ef41c-14b9-2021-9037-3f3677d751c5" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered affiliate waitlist">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span class="text-span-21">Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <div class="whitelist-content-div share">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text active">2   Share</div>
+            <div class="whitelist-step-text inactive">3   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Share and earn.</h1>
+              <p class="paragraph centered _18">For each person that whitelists for Lux Uranium via your affiliate link, you will earn:</p>
+            </div>
+          </div>
+          <div class="rewards-div">
+            <div class="reward-container"><img src="images/638f63f7f1d0b4ad9afdcb41_image-lux-uranium.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 oz. Lux Uranium NFT</div>
+                <div class="text-block-61">Approx. market value: $3</div>
+              </div>
+            </div>
+            <div class="reward-container"><img src="images/638f63e9262c0e3b24f627c5_image-tesla-model-s-plaid.png" loading="lazy" alt="" class="rewards-image">
+              <div class="rewards-text-container">
+                <div class="reward-title">1 entry to win a Tesla Model S Plaid</div>
+                <div class="text-block-61">Approx. market value: $150,000. <br>Faster than a lambo. No gas fees.</div>
+              </div>
+            </div>
+          </div>
+          <a data-w-id="a69ef41c-14b9-2021-9037-3f3677d751f0" href="https://sharemint.xyz/lux/sharer" target="_blank" class="button-5 w-button">Get your affiliate link</a>
+          <p class="disclaimer-text centered affiliate">
+            <a href="https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6390a2155b854c868f5de8cc_Lux%20Whitelist%20Program%20Terms%20and%20Conditions.pdf" target="_blank" class="link-35 earn">Lux Whitelist Program Terms and Conditions</a>
+          </p>
+        </div>
+        <div class="whitelist-bottom-cta share">
+          <a data-w-id="a69ef41c-14b9-2021-9037-3f3677d751f6" href="#" class="whitelist-cta-back w-inline-block">
+            <p data-w-id="a69ef41c-14b9-2021-9037-3f3677d751f7" class="whitelist-step-text cta">Next</p>
+            <p data-w-id="a69ef41c-14b9-2021-9037-3f3677d751f9" class="whitelist-step-text cta icon">chevron_right</p>
+          </a>
+        </div>
+      </div>
+      <div class="success-text">DONE!<br></div>
+      <div class="whitelist-content-div join">
+        <div class="whitelist-top-content">
+          <div class="whitelist-steps two-step">
+            <div class="whitelist-step-text inactive">1   Waitlist</div>
+            <div class="whitelist-step-text active">2   Join</div>
+          </div>
+          <div class="whitelist-steps three-step">
+            <div class="whitelist-step-text inactive">1   Whitelist</div>
+            <div class="whitelist-step-text inactive disable">2   Share</div>
+            <div class="whitelist-step-text active"><span>3</span>   Join</div>
+          </div>
+          <div class="whitelist-heading-container">
+            <div class="whitelist-text-div">
+              <h1 class="heading-21">Join our community.</h1>
+            </div>
+          </div>
+          <div class="w-layout-grid join-community affiliate">
+            <a data-w-id="a69ef41c-14b9-2021-9037-3f3677d75213" href="https://discord.com/invite/jpnx7CTN" target="_blank" class="social black w-inline-block"><img src="images/638896398ac4bc8861df7e0e_social-discord-black_1638896398ac4bc8861df7e0e_social-discord-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Discord</div>
+            </a>
+            <a href="https://instagram.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388966a33061730686fa203_social-instagram-black_16388966a33061730686fa203_social-instagram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Instagram</div>
+            </a>
+            <a id="w-node-a69ef41c-14b9-2021-9037-3f3677d7521b-cde6dfe3" href="https://t.me/luxdefichat" target="_blank" class="social black w-inline-block"><img src="images/6388964283b03a400937d9e6_social-telegram-black_16388964283b03a400937d9e6_social-telegram-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Join Lux Telegram</div>
+            </a>
+            <a href="https://twitter.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388964dce09974314c220e0_social-twitter-black_16388964dce09974314c220e0_social-twitter-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Twitter</div>
+            </a>
+            <a id="w-node-a69ef41c-14b9-2021-9037-3f3677d75223-cde6dfe3" href="https://linkedin.com/company/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/638896551c5ad827aebd9fbc_social-linkedin-black_1638896551c5ad827aebd9fbc_social-linkedin-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on LinkedIn</div>
+            </a>
+            <a href="https://facebook.com/luxdefi" target="_blank" class="social black w-inline-block"><img src="images/6388965f23abc495e86bf824_social-facebook-black_16388965f23abc495e86bf824_social-facebook-black.png" loading="lazy" width="36" alt="" class="social-logo">
+              <div class="social-text black">Follow on Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="whitelist-bottom-cta join two-step">
+          <p data-w-id="a69ef41c-14b9-2021-9037-3f3677d7522c" class="whitelist-step-text cta nuclear">Done</p>
+        </div>
+        <div class="whitelist-bottom-cta join three-step">
+          <div class="whitelist-cta-back">
+            <p data-w-id="a69ef41c-14b9-2021-9037-3f3677d75230" class="whitelist-step-text cta icon inactive">arrow_back_ios</p>
+          </div>
+          <p data-w-id="a69ef41c-14b9-2021-9037-3f3677d75232" class="whitelist-step-text cta nuclear">Done</p>
+          <p class="whitelist-step-text cta icon inactive hidden">arrow_back_ios</p>
+        </div>
+      </div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="credit-waitlist-form" class="overlay-form credit w-form">
+    <form id="wf-form-Credit-Waitlist-Form" name="wf-form-Credit-Waitlist-Form" data-name="Credit Waitlist Form" method="post" class="whitelist-form" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="9e43a5c5-af14-cc38-f6db-a070aa2609ea">
+      <div class="whitelist-content-container">
+        <h1 class="heading-3 hide">Waitlist</h1>
+        <p class="paragraph centered">Be the first to get access to Lux Credit.</p>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Email" id="Email-2" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-_9e43a5c5-af14-cc38-f6db-a070aa2609f6-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="9e43a5c5-af14-cc38-f6db-a070aa2609f7" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span>Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <h1 class="heading-21">Whitelisted!</h1>
+      <div class="success-text">DONE!<br></div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="validator-waitlist-form" class="overlay-form validator w-form">
+    <form id="validator-waitlist-form" name="wf-form-Validator-Waitlist-Form" data-name="Validator Waitlist Form" method="post" class="whitelist-form" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="1f2c7be3-ace8-42fa-f1d6-50532a865c1a">
+      <div class="whitelist-content-container">
+        <h1 class="heading-3 hide">Waitlist</h1>
+        <p class="paragraph centered">Be the first to get access to Lux Validator.</p>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Email" id="Email-2" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-_1f2c7be3-ace8-42fa-f1d6-50532a865c26-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="1f2c7be3-ace8-42fa-f1d6-50532a865c27" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span>Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <h1 class="heading-21">Whitelisted!</h1>
+      <div class="success-text">DONE!<br></div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="coin-waitlist-form" class="overlay-form coin w-form">
+    <form id="wf-form-Coin-Waitlist-Form" name="wf-form-Coin-Waitlist-Form" data-name="Coin Waitlist Form" method="post" class="whitelist-form" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="b8615c9f-c457-fffa-1b21-f6b13cdfd174">
+      <div class="whitelist-content-container">
+        <h1 class="heading-3 hide">Waitlist</h1>
+        <p class="paragraph centered">Be the first to get access to Lux Coin.</p>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Email" id="Email-2" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-b8615c9f-c457-fffa-1b21-f6b13cdfd180-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="b8615c9f-c457-fffa-1b21-f6b13cdfd181" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span>Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <h1 class="heading-21">Whitelisted!</h1>
+      <div class="success-text">DONE!<br></div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="pass-waitlist-form" class="overlay-form pass w-form">
+    <form id="wf-form-Pass-Waitlist-Form" name="wf-form-Pass-Waitlist-Form" data-name="Pass Waitlist Form" method="post" class="whitelist-form" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="400e215e-b750-1b71-8baa-a831c1f43fd0">
+      <div class="whitelist-content-container">
+        <h1 class="heading-3 hide">Waitlist</h1>
+        <p class="paragraph centered">Be the first to get access to Lux Pass.</p>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Email" id="Email-2" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-_400e215e-b750-1b71-8baa-a831c1f43fdc-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="400e215e-b750-1b71-8baa-a831c1f43fdd" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span>Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <h1 class="heading-21">Whitelisted!</h1>
+      <div class="success-text">DONE!<br></div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div id="everything-form" class="overlay-form everything w-form">
+    <form id="wf-form-Everything-Form" name="wf-form-Everything-Form" data-name="Everything Form" method="post" class="whitelist-form" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="1f8a0887-f3db-f75f-6c79-eb0fba42a16c">
+      <div class="whitelist-content-container">
+        <h1 class="heading-3 hide">Get in on everything</h1>
+        <p class="paragraph centered">Get notified on all product launches and NFT drops.</p>
+        <div class="form-grid"><input type="email" class="text-field phone email w-input" maxlength="256" name="Email-3" data-name="Email 3" placeholder="Email" id="Email-3" required="">
+          <div class="div-block-96">
+            <div class="country-code-html-embed w-embed"><input type="hidden" name="Dial code" id="dialCode" class="dialCode" value=""></div><input type="tel" class="text-field phone phone2 w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Phone number" id="phone" required="">
+            <div class="html-embed-4 w-embed"><span id="valid-msg" class="hide">Valid number</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div><input type="submit" id="whitelist-submit-button" value="Submit" data-wait="Submitting..." class="button-3 w-node-_1f8a0887-f3db-f75f-6c79-eb0fba42a178-cde6dfe3 w-button">
+        </div>
+        <div data-w-id="1f8a0887-f3db-f75f-6c79-eb0fba42a179" class="overlay-window-close-button"></div>
+        <p class="disclaimer-text centered">By entering your phone number and submitting, you consent to receive text messages from Lux at the number provided. Message and data rates may apply. Message frequency varies. You can unsubscribe at any time by replying STOP. View our <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a759a4241cce03adda508_LUX%20Privacy%20Policy.pdf" class="link-34"><span>Privacy Policy</span></a> and <a href="https://assets.website-files.com/632b595f153fb72fa1689a0b/634a75690007a137d11629ee_LUX%20NFT%20Terms%20and%20Conditions.pdf" class="link-35">Terms &amp; conditions</a>.</p>
+      </div>
+    </form>
+    <div class="success-message-2 w-form-done">
+      <h1 class="heading-21">Whitelisted!</h1>
+      <div class="success-text">DONE!<br></div>
+    </div>
+    <div class="error-message-4 w-form-fail">
+      <div class="error-text">Something went wrong. Please try again.</div>
+    </div>
+  </div>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-3 w-nav">
+    <div class="container-8 w-container">
+      <div class="div-block-90">
+        <a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-800_1.png" loading="lazy" width="42" height="" srcset="images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-800_1-p-500.png 500w, images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-800_1-p-800.png 800w, images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-800_1.png 800w" sizes="(max-width: 479px) 100vw, 115px" alt="" class="image"></a>
+        <div class="nav-button-links-separator-div">
+          <nav role="navigation" class="nav-menu w-nav-menu">
+            <a href="http://lux.credit" class="nav-link">Credit</a>
+            <link rel="prefetch" href="http://lux.credit">
+            <a href="https://lux.finance" class="nav-link">Finance</a>
+            <a href="#" class="nav-link market2">Market</a>
+            <a href="https://lux.network" class="nav-link">Network</a>
+            <link rel="prefetch" href="https://lux.network">
+            <a href="http://lux.partners" class="nav-link">Partners</a>
+            <link rel="prefetch" href="http://lux.partners">
+            <a href="#" class="hide w-nav-link">Home</a>
+            <a href="#" class="hide w-nav-link">About</a>
+            <a href="#" class="hide w-nav-link">Contact</a>
+            <a href="https://app.lux.market" class="primary-button nav-button">Enter App</a>
+          </nav>
+        </div>
+        <div class="menu-button-4 w-nav-button">
+          <div class="icon-6 w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="launch-banner">
+    <div class="banner-content">
+      <div class="banner-info">
+        <div class="launching-text">URANIUM  LAUNCH</div>
+      </div>
+      <div class="countdown">
+        <div class="countdown-item">
+          <div id="js-timer-days" class="clock-number">00</div>
+          <div class="clock-label">days</div>
+        </div>
+        <div class="countdown-item">
+          <div id="js-timer-hours" class="clock-number">00</div>
+          <div class="clock-label">hours</div>
+        </div>
+        <div class="countdown-item">
+          <div id="js-timer-minutes" class="clock-number">00</div>
+          <div class="clock-label">minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div id="js-timer-seconds" class="clock-number">00</div>
+          <div class="clock-label">seconds</div>
+        </div>
+      </div>
+      <div class="banner-button">
+        <a href="https://apply.lux.market/" class="primary-button banner w-button">Get priority access</a>
+        <a href="https://apply.lux.market/" class="primary-button banner color-changin w-button">Get priority access</a>
+        <div class="btn">
+          <div class="btn-gradient"></div>
+          <a href="#" class="btn-inner w-inline-block">
+            <div class="text-block-17">Get priority access</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gradient-wrapper">
+      <div class="circle _1"></div>
+      <div class="circle _2"></div>
+      <div class="circle _4"></div>
+      <div class="circle _3"></div>
+    </div><img src="images/63456d914ddf75d4b8aadba0_rainbow-banner.png" loading="lazy" sizes="(max-width: 479px) 0px, 100vw" srcset="images/63456d914ddf75d4b8aadba0_rainbow-banner-p-500.png 500w, images/63456d914ddf75d4b8aadba0_rainbow-banner-p-800.png 800w, images/63456d914ddf75d4b8aadba0_rainbow-banner-p-1080.png 1080w, images/63456d914ddf75d4b8aadba0_rainbow-banner-p-1600.png 1600w, images/63456d914ddf75d4b8aadba0_rainbow-banner-p-2000.png 2000w, images/63456d914ddf75d4b8aadba0_rainbow-banner-p-2600.png 2600w, images/63456d914ddf75d4b8aadba0_rainbow-banner-p-3200.png 3200w" alt="" class="rainbow-line">
+  </div>
+  <div class="arrow-div">
+    <div data-w-id="364f2710-ec09-a3fc-d771-751bfbbca573" class="expand_more-icon">▼</div>
+  </div>
+  <div class="scroll-snap-wrapper">
+    <div class="w-embed">
+      <style>
+.scroll-snap-wrapper {
+	scroll-snap-type: y mandatory;
+}
+.section {
+	scroll-snap-align: start;
+}
+</style>
+    </div>
+    <div data-w-id="93d11aa4-1392-5b90-ce1a-cbe0379aa8bf" class="section">
+      <div class="scroll-snap uranium">
+        <div class="text-container">
+          <div class="now-available">Now Available </div>
+          <h1 class="heading-h1">LUX SILVER<br></h1>
+          <div class="tagline silver">The Silver Rush is Here.</div>
+        </div>
+        <div class="video-wrapper silver">
+          <div data-poster-url="" data-video-urls="https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64d1675cdb5b99e39022968e_LUX SILVER 1oz-v11 16x16-transcode.mp4,https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64d1675cdb5b99e39022968e_LUX SILVER 1oz-v11 16x16-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video silver w-background-video w-background-video-atom"><video id="93d11aa4-1392-5b90-ce1a-cbe0379aa8ca-video" autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="/videos/luxsilver.mp4" data-wf-ignore="true">
+            </video></div>
+        </div>
+        <div class="buttons-container _100">
+          <a href="/silver" class="secondary-button w-button"><strong class="learn-more-button-text">Learn More</strong></a>
+          <a href="/silver" data-w-id="93d11aa4-1392-5b90-ce1a-cbe0379aa8cf" target="_blank" class="primary-button"><strong class="enter-app-nav-button-text mint-button-text">Buy Now</strong></a>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="5175aa77-b5c3-6eea-5aa7-ee420fecc4a6" class="section">
+      <div class="scroll-snap uranium">
+        <div class="text-container">
+          <div class="now-available">Now Available </div>
+          <h1 class="heading-h1">LUX GOLD<br></h1>
+          <div class="tagline silver">Responsibly manufactured, ethically sourced</div>
+        </div>
+        <div class="video-wrapper silver">
+          <div data-poster-url="https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64d1675cdb5b99e39022968e_LUX SILVER 1oz-v11 16x16-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64d1675cdb5b99e39022968e_LUX SILVER 1oz-v11 16x16-transcode.mp4,https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64d1675cdb5b99e39022968e_LUX SILVER 1oz-v11 16x16-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video silver w-background-video w-background-video-atom"><video id="5175aa77-b5c3-6eea-5aa7-ee420fecc4b1-video" autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="/videos/luxgold.mp4" data-wf-ignore="true">
+            </video></div>
+        </div>
+        <div class="buttons-container _100">
+          <a href="/gold" class="secondary-button w-button"><strong class="learn-more-button-text">Learn More</strong></a>
+          <a href="/gold" data-w-id="5175aa77-b5c3-6eea-5aa7-ee420fecc4b6" target="_blank" class="primary-button"><strong class="enter-app-nav-button-text mint-button-text">Buy Now</strong></a>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="d06c634a-ea19-f0b9-5ce7-a75755e74bd3" class="section hide">
+      <div class="scroll-snap uranium">
+        <div class="text-container">
+          <div data-w-id="305fa6db-38aa-ba3a-d0fd-ebf95f2885ef" class="now-available">Now Available </div>
+          <h1 class="heading-h1">LUX URANIUM<br></h1>
+          <div class="tagline uranium">Own digital uranium, backed by the real thing.</div>
+        </div>
+        <div class="video-wrapper">
+          <div data-poster-url="videos/LUX URANIUM 1000 LBS-poster-00001.jpg" data-video-urls="videos/LUX URANIUM 1000 LBS-transcode.mp4,videos/LUX URANIUM 1000 LBS-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video u3o8 w-background-video w-background-video-atom"><video id="1fea4f9f-6bd8-2bfd-11c7-6242559e8674-video" autoplay="" loop="" style="background-image:url(&quot;videos/LUX URANIUM 1000 LBS-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="videos/LUX URANIUM 1000 LBS-transcode.mp4" data-wf-ignore="true">
+              <source src="videos/LUX URANIUM 1000 LBS-transcode.webm" data-wf-ignore="true">
+            </video></div>
+        </div>
+        <div class="buttons-container _100">
+          <a href="/uranium" class="secondary-button w-button"><strong class="learn-more-button-text">Learn More</strong></a>
+          <a href="/uranium" data-w-id="c0fabb25-c765-4e25-79f8-57ee66c3c14e" class="primary-button"><strong class="enter-app-nav-button-text mint-button-text">Whitelist</strong></a>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="e5d336a1-1298-05c2-b15d-c7ef0ac774a8" class="section">
+      <div class="scroll-snap coin">
+        <div class="text-container">
+          <h1 class="heading-h1">LUX COIN<br></h1>
+          <div class="tagline coin">Genesis Collection now available on Open Sea.</div>
+        </div>
+        <div class="video-wrapper">
+          <div data-poster-url="videos/LUX-COIN-poster-00001.jpg" data-video-urls="videos/LUX-COIN-transcode.mp4,videos/LUX-COIN-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video coins w-background-video w-background-video-atom"><video id="e5d336a1-1298-05c2-b15d-c7ef0ac774b1-video" autoplay="" loop="" style="background-image:url(&quot;videos/LUX-COIN-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="videos/LUX-COIN-transcode.mp4" data-wf-ignore="true">
+              <source src="videos/LUX-COIN-transcode.webm" data-wf-ignore="true">
+            </video></div>
+        </div>
+        <div class="buttons-container _100">
+          <a href="/coin" class="secondary-button w-button"><strong class="learn-more-button-text">Learn More</strong></a>
+          <a href="/coin" data-w-id="e580cf47-d90c-343f-cdbf-6024e17e1b35" class="primary-button w-button">Whitelist</a>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="e93731e7-5f23-b826-f2ae-9bb2861ed826" class="section">
+      <div class="scroll-snap">
+        <div class="text-container">
+          <h1 class="heading-h1 validator">LUX VALIDATOR<br></h1>
+          <div class="tagline">Run the chain.</div>
+        </div>
+        <div class="video-wrapper">
+          <div data-poster-url="videos/Lux VALIDATOR-poster-00001.jpg" data-video-urls="videos/Lux VALIDATOR-transcode.mp4,videos/Lux VALIDATOR-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video validator w-background-video w-background-video-atom"><video id="e93731e7-5f23-b826-f2ae-9bb2861ed834-video" autoplay="" loop="" style="background-image:url(&quot;videos/Lux VALIDATOR-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="videos/Lux-VALIDATOR-transcode.mp4" data-wf-ignore="true">
+              <source src="videos/Lux-VALIDATOR-transcode.webm" data-wf-ignore="true">
+            </video></div>
+        </div>
+        <div class="buttons-container _100">
+          <a href="lux-validator.html" class="secondary-button learn-more-text w-button">Learn More</a>
+          <a href="#" data-w-id="9de0f705-d329-3f35-897c-f1ca606ea5f4" class="primary-button w-button">Whitelist</a>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="9bc00217-f91c-85a9-cae4-56cedf01faec" class="section">
+      <div class="scroll-snap">
+        <div class="text-container">
+          <h1 class="heading-h1 pass">LUX PASS<br></h1>
+          <div class="tagline hide">Get priority access to the mainnet launch.</div>
+          <div class="tagline launch">FREE priority access to LUX events and NFT drops.</div>
+          <div class="text-block-18">Get priority access to the launch.</div>
+          <div class="countdown mobile">
+            <div class="countdown-item">
+              <div id="js-timer-days" class="clock-number">00</div>
+              <div class="clock-label">days</div>
+            </div>
+            <div class="countdown-item">
+              <div id="js-timer-hours" class="clock-number">00</div>
+              <div class="clock-label">hours</div>
+            </div>
+            <div class="countdown-item">
+              <div id="js-timer-minutes" class="clock-number">00</div>
+              <div class="clock-label">minutes</div>
+            </div>
+            <div class="countdown-item">
+              <div id="js-timer-seconds" class="clock-number">00</div>
+              <div class="clock-label">seconds</div>
+            </div>
+          </div>
+        </div>
+        <div class="pass-wrapper">
+          <div data-poster-url="https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6335dd19dcb80846f0efc634_LUX-PASS-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64068464cf2c78746ce6e0bb_LUX%20PASS-transcode.mp4,https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64068464cf2c78746ce6e0bb_LUX%20PASS-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video h pass w-background-video w-background-video-atom"><video id="9bc00217-f91c-85a9-cae4-56cedf01fafa-video" autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/632b595f153fb72fa1689a0b/6335dd19dcb80846f0efc634_LUX PASS-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64068464cf2c78746ce6e0bb_LUX-PASS-transcode.mp4" data-wf-ignore="true">
+              <source src="https://uploads-ssl.webflow.com/64068464cf2c7845c6e6dfdf/64068464cf2c78746ce6e0bb_LUX-PASS-transcode.webm" data-wf-ignore="true">
+            </video></div><img src="images/6335e50c7be87d317ffee021_Lux-Pass.png" loading="lazy" width="380" data-w-id="957a4fe3-4b32-c564-7dae-2078ba9bb37b" srcset="images/6335e50c7be87d317ffee021_Lux-Pass-p-500.png 500w, images/6335e50c7be87d317ffee021_Lux-Pass.png 722w" sizes="(max-width: 479px) 0px, (max-width: 1439px) 100vw, 380px" alt="" class="image-5 pass">
+        </div>
+        <div class="buttons-container _100">
+          <a href="/pass" class="secondary-button learn-more-text w-button">Learn More</a>
+          <a href="/pass" data-w-id="cd30c39a-d80f-f11d-5748-10e4f3edf7c5" class="primary-button w-button">Whitelist</a>
+          <a href="https://apply.lux.market/" class="primary-button banner color-changin mobile w-button">Get priority access</a>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="a17d1946-3061-662f-0606-a3b65df0d239" class="section">
+      <div class="scroll-snap credit">
+        <div class="text-container">
+          <h1 class="heading-h1">LUX CREDIT<br></h1>
+          <div class="tagline">Never sell your crypto again.</div>
+        </div>
+        <div class="video-wrapper">
+          <div data-poster-url="videos/LUX-CARD-poster-00001.jpg" data-video-urls="videos/LUX-CARD-transcode.mp4,videos/LUX-CARD-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video card w-background-video w-background-video-atom"><video id="a17d1946-3061-662f-0606-a3b65df0d242-video" autoplay="" loop="" style="background-image:url(&quot;videos/LUX-CARD-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="videos/LUX-CARD-transcode.mp4" data-wf-ignore="true">
+              <source src="videos/LUX-CARD-transcode.webm" data-wf-ignore="true">
+            </video></div>
+        </div>
+        <div class="buttons-container _100">
+          <a href="/credit" class="secondary-button learn-more-text w-button">Learn More</a>
+          <a href="/credit" data-w-id="1b054f71-b20e-c28f-29b5-32ae88f777cd" class="primary-button w-button">Whitelist</a>
+        </div>
+      </div>
+    </div>
+    <div id="want-in" class="section">
+      <div class="scroll-snap footer-nav footer-section wagmi">
+        <div class="hashtag">
+          <h1 id="wagmi" class="heading-h3">Join the global rush to own silver</h1>
+          <h1 class="heading-h1">the silver rush is here</h1>
+          <div class="footer-form-two-3 w-form">
+            <form id="wf-form-Footer-Form-Two" name="wf-form-Footer-Form-Two" data-name="Footer Form Two" method="get" class="footer-form-container-two-3" data-wf-page-id="64068464cf2c78c0cde6dfe3" data-wf-element-id="2d582c56-1dc1-baff-0be8-731eae25dec3">
+              <div class="footer-form-block-two-2"><input type="text" class="input-field image sign-up market w-input" maxlength="256" name="Phone-number" data-name="Phone number" placeholder="+X (XXX) XXX-XXXX" id="Phone-number" required=""><input type="tel" class="footer-form-input-2 w-input" maxlength="256" name="Footer-Phone-Two-2" data-name="Footer Phone Two 2" aria-label="Enter your email" placeholder="Phone with country code" id="Footer-Phone-Two" required=""><input type="submit" value="I WANT IN" data-wait="Please wait..." class="button-primary-2 w-button"></div>
+            </form>
+            <div class="success-message w-form-done">
+              <div class="text-block-11">Thank you! Your submission has been received!</div>
+            </div>
+            <div class="error-message w-form-fail">
+              <div class="text-block-12">Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+          <div class="buttons-container centered">
+            <a href="https://app.lux.market" data-w-id="82fcc1f8-84c4-d661-35a0-69477c11f5bc" class="primary-button w-button">Enter App</a>
+            <a href="https://apply.lux.market/" class="primary-button banner color-changin mobile w-button">Get priority access</a>
+          </div>
+        </div>
+        <div class="footer-div-block">
+          <div class="footer landing-page mobile new">
+            <div class="footer-content-container-7">
+              <div class="footer-links-7">
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f13-6f904f10" class="lux-network-finance-3"><img src="images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle.png" loading="lazy" width="180" alt="" sizes="(max-width: 479px) 0px, (max-width: 991px) 100vw, (max-width: 1439px) 100px, 150px" srcset="images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-500.png 500w, images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-800.png 800w, images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-1080.png 1080w, images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle.png 1707w" class="image footer-logo"></div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f15-6f904f10" class="footer-column-3">
+                  <div class="footer-link-title">
+                    <a href="https://lux.market/" class="footer-section-title-3">Market</a>
+                  </div>
+                  <div class="footer-link-5 hide">
+                    <a href="https://lux.market/product/uranium" target="_blank" class="link-footer-3">Lux Uranium</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="/gckold" target="_blank" class="link-footer-3">Lux Gold</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="/silver" target="_blank" class="link-footer-3">Lux Silver</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="/credit" target="_blank" class="link-footer-3">Lux Credit</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="/validator" target="_blank" class="link-footer-3">Lux Validator</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="/coin" target="_blank" class="link-footer-3">Lux Coin</a>
+                  </div>
+                  <div class="footer-link-5 hide">
+                    <a href="/pass" target="_blank" class="link-footer-3">Lux Pass</a>
+                  </div>
+                </div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f28-6f904f10" class="footer-column-3">
+                  <div class="footer-link-title">
+                    <a href="https://lux.network/" target="_blank" class="footer-section-title-3">Network</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://apply.lux.network/" target="_blank" class="link-footer-3">Apply for Beta</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://docs.lux.network/intro/about" target="_blank" class="link-footer-3">Whitepapers</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://github.com/luxdefi" target="_blank" class="link-footer-3">Github</a>
+                  </div>
+                </div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f32-6f904f10" class="footer-column-3">
+                  <div class="footer-link-title">
+                    <a href="https://lux.partners/" target="_blank" class="footer-section-title-3">Partners</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://lux.partners/" class="link-footer-3">About</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://apply.lux.partners/" target="_blank" class="link-footer-3">Partner with Lux</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://lux.fund" class="link-footer-3">Lux Fund</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="mailto:support@lux.partners?subject=%E2%96%BC%20Lux%20Support" class="link-footer-3">Lux Support</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://docs.lux.network/about/v/lux-job-listings/" target="_blank" class="link-footer-3">Careers</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://drive.google.com/drive/folders/14OJtKLVakGY6883XO9yGbiHtlFxQUUm5?usp=share_link" target="_blank" class="link-footer-3">Press Kit</a>
+                  </div>
+                </div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f42-6f904f10" class="footer-column-3 legal">
+                  <div class="footer-link-title">
+                    <a href="#" target="_blank" class="footer-section-title-3">Community</a>
+                  </div>
+                  <div class="text-block-48 hide">
+                    <a href="#" target="_blank" class="link-footer-3 copyright"><strong class="bold-text-6">Copyright © 2023 Lux Partners Ltd. All rights reserved.</strong></a>
+                  </div>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f4a" href="https://discord.gg/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09ce62090206a2d032a_social-discord_16363f09ce62090206a2d032a_social-discord.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Discord</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f4e" href="https://t.me/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c8f12d26e48000749_social-telegram_16363f09c8f12d26e48000749_social-telegram.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Telegram</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f52" href="https://twitter.com/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c5960d3e2fc2a65a9_social-twitter_16363f09c5960d3e2fc2a65a9_social-twitter.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Twitter</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f56" href="https://facebook.com/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c71e5f807b10750f0_social-facebook_16363f09c71e5f807b10750f0_social-facebook.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Facebook</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f5a" href="https://linkedin.com/company/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c9d6a9ba38fa5e993_social-linkedin_16363f09c9d6a9ba38fa5e993_social-linkedin.png" loading="lazy" width="50" alt="" class="social-icon-2 in">
+                    <div class="social-text-2">LinkedIn</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f5e" href="https://instagram.com/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c1ec90d1386c04c7e_social-instagram_16363f09c1ec90d1386c04c7e_social-instagram.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Instagram</div>
+                  </a>
+                </div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f62-6f904f10" class="footer-column-3 legal">
+                  <div class="footer-link-title">
+                    <a href="#" target="_blank" class="footer-section-title-3">Legal</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="documents/634a75690007a137d11629ee_LUX-NFT-Terms-and-Conditions.pdf" class="link-footer-3">Terms and Conditions</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="documents/634a759a4241cce03adda508_LUX-Privacy-Policy.pdf" target="_blank" class="link-footer-3">Privacy Policy</a>
+                  </div>
+                  <div class="text-block-48 hide">
+                    <a href="#" target="_blank" class="link-footer-3 copyright"><strong class="bold-text-6">Copyright © 2023 Lux Partners Ltd. All rights reserved.</strong></a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-column-3 horizontal">
+                <div class="text-block-65">
+                  <a href="https://lux.market/#" target="_blank" class="link-38">Copyright © 2023 Lux Partners Limited. All rights reserved.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mobile-hide footer">
+      <div class="scroll-snap footer-nav footer-section">
+        <div class="div-block-100">
+          <div class="footer landing-page mobile new">
+            <div class="footer-content-container-7">
+              <div class="footer-links-7">
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f13-6f904f10" class="lux-network-finance-3"><img src="images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle.png" loading="lazy" width="180" alt="" sizes="(max-width: 479px) 0px, (max-width: 991px) 100vw, (max-width: 1439px) 100px, 150px" srcset="images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-500.png 500w, images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-800.png 800w, images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle-p-1080.png 1080w, images/633234b9495f61e5812bfa75_lux-logo-upside-down-triangle.png 1707w" class="image footer-logo"></div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f15-6f904f10" class="footer-column-3">
+                  <div class="footer-link-title">
+                    <a href="https://lux.market/" class="footer-section-title-3">Market</a>
+                  </div>
+                  <div class="footer-link-5 hide">
+                    <a href="https://lux.market/product/uranium" target="_blank" class="link-footer-3">Lux Uranium</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://lux.market/lux-credit" target="_blank" class="link-footer-3">Lux Credit</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://lux.market/lux-validator" target="_blank" class="link-footer-3">Lux Validator</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://lux.market/lux-coin" target="_blank" class="link-footer-3">Lux Coin</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="/silver" target="_blank" class="link-footer-3">Lux Silver</a>
+                  </div>
+                  <div class="footer-link-5 hide">
+                    <a href="/pass" target="_blank" class="link-footer-3">Lux Pass</a>
+                  </div>
+                </div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f28-6f904f10" class="footer-column-3">
+                  <div class="footer-link-title">
+                    <a href="https://lux.network/" target="_blank" class="footer-section-title-3">Network</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://apply.lux.network/" target="_blank" class="link-footer-3">Apply for Beta</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://docs.lux.network/intro/about" target="_blank" class="link-footer-3">Whitepapers</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://github.com/luxdefi" target="_blank" class="link-footer-3">Github</a>
+                  </div>
+                </div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f32-6f904f10" class="footer-column-3">
+                  <div class="footer-link-title">
+                    <a href="https://lux.partners/" target="_blank" class="footer-section-title-3">Partners</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://lux.partners/" class="link-footer-3">About</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://apply.lux.partners/" target="_blank" class="link-footer-3">Partner with Lux</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://lux.fund" class="link-footer-3">Lux Fund</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="mailto:support@lux.partners?subject=%E2%96%BC%20Lux%20Support" class="link-footer-3">Lux Support</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://docs.lux.network/about/v/lux-job-listings/" target="_blank" class="link-footer-3">Careers</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="https://drive.google.com/drive/folders/14OJtKLVakGY6883XO9yGbiHtlFxQUUm5?usp=share_link" target="_blank" class="link-footer-3">Press Kit</a>
+                  </div>
+                </div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f42-6f904f10" class="footer-column-3 legal">
+                  <div class="footer-link-title">
+                    <a href="#" target="_blank" class="footer-section-title-3">Community</a>
+                  </div>
+                  <div class="text-block-48 hide">
+                    <a href="#" target="_blank" class="link-footer-3 copyright"><strong class="bold-text-6">Copyright © 2023 Lux Partners Ltd. All rights reserved.</strong></a>
+                  </div>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f4a" href="https://discord.gg/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09ce62090206a2d032a_social-discord_16363f09ce62090206a2d032a_social-discord.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Discord</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f4e" href="https://t.me/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c8f12d26e48000749_social-telegram_16363f09c8f12d26e48000749_social-telegram.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Telegram</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f52" href="https://twitter.com/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c5960d3e2fc2a65a9_social-twitter_16363f09c5960d3e2fc2a65a9_social-twitter.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Twitter</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f56" href="https://facebook.com/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c71e5f807b10750f0_social-facebook_16363f09c71e5f807b10750f0_social-facebook.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Facebook</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f5a" href="https://linkedin.com/company/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c9d6a9ba38fa5e993_social-linkedin_16363f09c9d6a9ba38fa5e993_social-linkedin.png" loading="lazy" width="50" alt="" class="social-icon-2 in">
+                    <div class="social-text-2">LinkedIn</div>
+                  </a>
+                  <a data-w-id="85a3caf5-da92-0f67-f6fa-36166f904f5e" href="https://instagram.com/luxdefi" target="_blank" class="social-row w-inline-block"><img src="images/6363f09c1ec90d1386c04c7e_social-instagram_16363f09c1ec90d1386c04c7e_social-instagram.png" loading="lazy" width="50" alt="" class="social-icon-2">
+                    <div class="social-text-2">Instagram</div>
+                  </a>
+                </div>
+                <div id="w-node-_85a3caf5-da92-0f67-f6fa-36166f904f62-6f904f10" class="footer-column-3 legal">
+                  <div class="footer-link-title">
+                    <a href="#" target="_blank" class="footer-section-title-3">Legal</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="documents/634a75690007a137d11629ee_LUX-NFT-Terms-and-Conditions.pdf" class="link-footer-3">Terms and Conditions</a>
+                  </div>
+                  <div class="footer-link-5">
+                    <a href="documents/634a759a4241cce03adda508_LUX-Privacy-Policy.pdf" target="_blank" class="link-footer-3">Privacy Policy</a>
+                  </div>
+                  <div class="text-block-48 hide">
+                    <a href="#" target="_blank" class="link-footer-3 copyright"><strong class="bold-text-6">Copyright © 2023 Lux Partners Ltd. All rights reserved.</strong></a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-column-3 horizontal">
+                <div class="text-block-65">
+                  <a href="https://lux.market/#" target="_blank" class="link-38">Copyright © 2023 Lux Capital Partners Inc. All rights reserved.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64068464cf2c7845c6e6dfdf" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script><!--  Hotjar Tracking Code for my site  -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3203373,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  <script type="text/javascript" async="" src="https://cdn.reamaze.com/assets/reamaze.js"></script>
+  <script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support['account'] = 'luxdefi';
+  _support['ui']['contactMode'] = 'anonymous';
+  _support['ui']['enableKb'] = 'true';
+  _support['ui']['styles'] = {
+    widgetColor: 'rgb(0, 0, 0)',
+  };
+  _support['ui']['shoutboxFacesMode'] = 'brand-avatar';
+  _support['ui']['shoutboxHeaderLogo'] = true;
+  _support['ui']['widget'] = {
+    icon: 'chat',
+    displayOn: 'all',
+    fontSize: 'large',
+    allowBotProcessing: true,
+    label: {
+      text: 'Let us know if you have any questions! &#128522;',
+      mode: "prompt-3",
+      delay: 10,
+      duration: 15,
+    },
+    position: 'bottom-right',
+    mobilePosition: 'bottom-right'
+  };
+  _support['custom_fields'] = {
+    'order': {
+      pos: 1665199887482,
+      type: 'hidden',
+      value: '1',
+    }
+  };
+  _support['apps'] = {
+    faq: {"enabled":true},
+    recentConversations: {},
+    orders: {}
+  };
+</script>
+  <script>
+// Countdown Timer
+(function () {
+    var deadline = '2023/10/15 09:01';
+    function pad(num, size) {
+        var s = "0" + num;
+        return s.substr(s.length - size);
+    }
+    // fixes "Date.parse(date)" on safari
+    function parseDate(date) {
+        const parsed = Date.parse(date);
+        if (!isNaN(parsed)) return parsed
+        return Date.parse(date.replace(/-/g, '/').replace(/[a-z]+/gi, ' '));
+    }
+    function getTimeRemaining(endtime) {
+        let total = parseDate(endtime) - Date.parse(new Date())
+        let seconds = Math.floor((total / 1000) % 60)
+        let minutes = Math.floor((total / 1000 / 60) % 60)
+        let hours = Math.floor((total / (1000 * 60 * 60)) % 24)
+        let days = Math.floor(total / (1000 * 60 * 60 * 24))
+        return { total, days, hours, minutes, seconds };
+    }
+    function clock(id, endtime) {
+        let days = document.getElementById(id + '-days')
+        let hours = document.getElementById(id + '-hours')
+        let minutes = document.getElementById(id + '-minutes')
+        let seconds = document.getElementById(id + '-seconds')
+        var timeinterval = setInterval(function () {
+            var time = getTimeRemaining(endtime);
+            if (time.total <= 0) {
+                clearInterval(timeinterval);
+            } else {
+                days.innerHTML = pad(time.days, 2);
+                hours.innerHTML = pad(time.hours, 2);
+                minutes.innerHTML = pad(time.minutes, 2);
+                seconds.innerHTML = pad(time.seconds, 2);
+            }
+        }, 1000);
+    }
+    clock('js-timer', deadline);
+})();
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"></script>
+  <!--  Intl-tel-input  -->
+  <script>
+var input = document.querySelector("#phone"),
+	dialCode = document.querySelector(".dialCode"),
+ 	errorMsg = document.querySelector("#error-msg"),
+    validMsg = document.querySelector("#valid-msg");
+var iti = intlTelInput(input, {
+  initialCountry: "us",
+  placeholderNumberType: 'FIXED_LINE',
+});
+var updateInputValue = function (event) {
+       dialCode.value = "+" + iti.getSelectedCountryData().dialCode;
+};
+input.addEventListener('input', updateInputValue, false);
+input.addEventListener('countrychange', updateInputValue, false);
+var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+var reset = function() {
+  input.classList.remove("error");
+  errorMsg.innerHTML = "";
+  errorMsg.classList.add("hide");
+  validMsg.classList.add("hide");
+};
+input.addEventListener('blur', function() {
+  reset();
+  if (input.value.trim()) {
+    if (iti.isValidNumber()) {
+      validMsg.classList.remove("hide");
+    } else {
+      input.classList.add("error");
+      var errorCode = iti.getValidationError();
+      errorMsg.innerHTML = errorMap[errorCode];
+      errorMsg.classList.remove("hide");
+    }
+  }
+});
+input.addEventListener('change', reset);
+input.addEventListener('keyup', reset);
+</script>
+</body>
+</html>
